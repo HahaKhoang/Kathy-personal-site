@@ -1,4 +1,5 @@
 import styles from "./App.module.scss";
+import ProjectContainer from "./ProjectContainer";
 import TextContainer from "./TextContainer";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
           <TextContainer />
         </div>
         <div className={styles["project-container"]}>
-          <p>Projects</p>
+          <ProjectContainer />
         </div>
       </div>
     </>
