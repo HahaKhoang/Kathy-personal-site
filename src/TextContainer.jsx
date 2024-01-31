@@ -7,7 +7,7 @@ function TextContainer() {
         <p>Kathy</p>
       </div>
       <div className={styles["center-container"]}>
-        <h1>Creative. Frontend Developer.</h1>
+        <h1 className={styles.title}>Creative. Frontend Developer.</h1>
         <p>The portfolio page of Kathy Hoang</p>
       </div>
       <div className={styles["contact-container"]}>
