@@ -1,7 +1,12 @@
+import ProjectPage from "../UI/ProjectPage";
+import felix from "../../public/img/felix.jpg";
+import Header from "../UI/Header";
+
 function ClimateDeathWheel() {
   return (
     <div>
-      <p>Climate death wheel</p>
+      <Header />
+      <ProjectPage title="Climate Death Wheel" img={felix} />
     </div>
   );
 }

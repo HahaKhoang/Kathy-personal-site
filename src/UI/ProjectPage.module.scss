@@ -1,0 +1,59 @@
+.container {
+  background-color: beige;
+  padding: 4rem;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.text-container {
+  background-color: rosybrown;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
+
+.project-container {
+  background-color: wheat;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  overflow-y: auto;
+
+  & img {
+    width: 80rem;
+    height: 40rem;
+  }
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projects {
+  background-color: blanchedalmond;
+  width: 20%;
+  display: grid;
+  justify-content: flex-end;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 15rem);
+  grid-template-rows: repeat(auto-fit, 15rem);
+  position: sticky;
+
+  &img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

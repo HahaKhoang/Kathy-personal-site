@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styles from "./App.module.scss";
-import Home from "./pages/Home";
+import Homepage from "./pages/Homepage";
 import ClimateDeathWheel from "./pages/ClimateDeathWheel";
 import TabiTomodachi from "./pages/TabiTomodachi";
 import Auroramalet from "./pages/Auroramalet";
@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Homepage />} />
         <Route path="climate-death-wheel" element={<ClimateDeathWheel />} />
         <Route path="tabi-tomodachi" element={<TabiTomodachi />} />
         <Route path="auroramalet" element={<Auroramalet />} />

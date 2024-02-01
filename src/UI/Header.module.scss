@@ -1,0 +1,23 @@
+.container {
+  //   background-color: navy;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  color: white;
+
+  & p {
+    font-size: 2rem;
+  }
+}
+
+.kathy {
+}
+
+.about {
+  display: flex;
+  position: absolute;
+  gap: 2rem;
+  left: 50%;
+}
