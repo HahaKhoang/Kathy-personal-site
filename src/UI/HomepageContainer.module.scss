@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   color: white;
+  position: fixed;
 }
 
 .center-container {
@@ -27,6 +28,7 @@
   grid-template-columns: 100%;
   grid-auto-rows: 80rem;
   gap: 1rem;
+  margin-left: auto;
 
   & img {
     width: 100%;
