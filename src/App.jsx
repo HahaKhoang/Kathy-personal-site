@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage";
 import ClimateDeathWheel from "./pages/ClimateDeathWheel";
 import TabiTomodachi from "./pages/TabiTomodachi";
 import Auroramalet from "./pages/Auroramalet";
+import Header from "./UI/Header";
 
 function App() {
   return (

@@ -5,9 +5,7 @@ import HomepageContainer from "../UI/HomepageContainer";
 function Homepage() {
   return (
     <>
-      <Header />
       <HomepageContainer />
-      <Footer />
     </>
   );
 }
