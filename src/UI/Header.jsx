@@ -3,21 +3,23 @@ import styles from "./Header.module.scss";
 
 function Header() {
   return (
-    <nav className={styles.nav}>
-      <div>
-        <NavLink to="/" className={styles.logo}>
-          Kathy Hoang
-        </NavLink>
-      </div>
-      <div>
-        <ul className={styles.about}>
-          <li>
-            <NavLink to="/" className={styles.link}>
-              Home
-            </NavLink>
-          </li>
-          <li>About</li>
-        </ul>
+    <nav className={styles["nav-container"]}>
+      <div className={styles.nav}>
+        <div>
+          <NavLink to="/" className={styles.logo}>
+            Kathy Hoang
+          </NavLink>
+        </div>
+        <div>
+          <ul className={styles.about}>
+            <li>
+              <NavLink to="/" className={styles.link}>
+                Home
+              </NavLink>
+            </li>
+            <li>About</li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
