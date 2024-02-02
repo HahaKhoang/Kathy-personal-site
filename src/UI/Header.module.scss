@@ -9,13 +9,15 @@
   align-items: end;
   color: white;
   // background-color: antiquewhite;
+  font-family: "Oswald", sans-serif;
 
   & p {
     font-size: 2rem;
   }
 }
 
-.kathy {
+.logo {
+  text-transform: uppercase;
 }
 
 .about {
@@ -24,5 +26,7 @@
 
   & li {
     list-style: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
   }
 }

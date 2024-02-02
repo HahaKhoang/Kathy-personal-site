@@ -4,8 +4,8 @@ import styles from "./Header.module.scss";
 function Header() {
   return (
     <nav className={styles.nav}>
-      <div className={styles.kathy}>
-        <p>Kathy</p>
+      <div className={styles.logo}>
+        <p>Kathy Hoang</p>
       </div>
       <div>
         <ul className={styles.about}>

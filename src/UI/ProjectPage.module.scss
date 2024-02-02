@@ -7,7 +7,7 @@
   height: 65rem;
   width: calc(100vw - 10rem);
   display: flex;
-  gap: 2rem;
+  gap: 10rem;
   color: white;
 }
 
@@ -15,6 +15,17 @@
   // background-color: aqua;
   width: 20%;
   position: sticky;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  & h1 {
+    text-transform: uppercase;
+  }
+
+  & p {
+    font-size: 1.6rem;
+  }
 }
 
 .middle-container {
@@ -23,7 +34,7 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 1rem;
 }
 
 .picture {
@@ -33,85 +44,17 @@
 }
 
 .right-container {
-  background-color: lavenderblush;
+  // background-color: lavenderblush;
   width: 20%;
   position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+
+  & img {
+    width: 15rem;
+    height: 15rem;
+    filter: grayscale(100%);
+  }
 }
-
-// .container {
-//   // background-color: beige;
-//   padding: 20rem 5rem 0;
-//   width: 100vw;
-//   display: flex;
-//   align-items: flex-start;
-//   gap: 2rem;
-//   color: white;
-// }
-
-// .text-container {
-//   position: sticky;
-//   background-color: rosybrown;
-//   width: 20%;
-//   height: calc(100vh - 30rem);
-//   display: flex;
-//   flex-direction: column;
-//   gap: 3rem;
-
-//   & p {
-//     font-size: 1.4rem;
-//   }
-// }
-
-// .title {
-//   text-transform: uppercase;
-// }
-
-// .project-container {
-//   background-color: wheat;
-//   width: 60%;
-//   height: calc(100vh - 30rem);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 3rem;
-//   overflow-y: auto;
-
-//   & img {
-//     width: 80rem;
-//     height: 50rem;
-//   }
-// }
-
-// .picture {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
-
-// .projects {
-//   position: sticky;
-//   background-color: blanchedalmond;
-//   width: 20%;
-//   height: calc(100vh - 30rem);
-//   display: grid;
-//   justify-content: flex-end;
-//   gap: 1rem;
-//   grid-template-columns: repeat(1, 10rem);
-//   grid-template-rows: repeat(auto-fit, 10rem);
-
-//   & img {
-//     filter: grayscale(100%);
-
-//     &:hover {
-//       cursor: pointer;
-//       filter: none;
-//     }
-//   }
-// }
-
-// .project {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
