@@ -10,4 +10,9 @@
 .footer {
   display: flex;
   gap: 2rem;
+
+  & li {
+    list-style: none;
+    font-size: 1.2rem;
+  }
 }

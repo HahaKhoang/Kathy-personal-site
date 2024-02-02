@@ -4,6 +4,7 @@ import cdw2 from "../../public/img/cdw2.jpg";
 import cdw3 from "../../public/img/cdw3.jpg";
 import cdw4 from "../../public/img/cdw4.jpg";
 import cdw5 from "../../public/img/cdw5.jpg";
+import Header from "../UI/Header";
 
 function ClimateDeathWheel() {
   const images = [cdw1, cdw2, cdw3, cdw4, cdw5];

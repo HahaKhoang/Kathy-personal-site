@@ -1,23 +1,38 @@
+.right-container {
+  // background-color: pink;
+  height: 100%;
+  width: 20%;
+  margin: 0px;
+  float: right;
+  position: fixed;
+
+  & img {
+    width: 15rem;
+    height: 15rem;
+    filter: grayscale(100%);
+  }
+}
+
 .container {
   position: fixed;
   bottom: 10rem;
   left: 50%;
   transform: translateX(-50%);
-  // background-color: aliceblue;
   height: 65rem;
   width: calc(100vw - 10rem);
   display: flex;
   gap: 10rem;
   color: white;
+  // background-color: aquamarine;
 }
 
 .left-container {
-  // background-color: aqua;
   width: 20%;
-  position: sticky;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  position: relative;
+  // background-color: bisque;
 
   & h1 {
     text-transform: uppercase;
@@ -29,12 +44,12 @@
 }
 
 .middle-container {
-  // background-color: navajowhite;
+  // background-color: sandybrown;
   width: 60%;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  overflow: scroll;
 }
 
 .picture {
@@ -44,7 +59,7 @@
 }
 
 .right-container {
-  // background-color: lavenderblush;
+  // background-color: olive;
   width: 20%;
   position: sticky;
   display: flex;
