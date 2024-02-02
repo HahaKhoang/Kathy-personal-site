@@ -1,11 +1,14 @@
-.container {
+.nav {
   position: fixed;
   top: 5rem;
   left: 5rem;
   z-index: 5;
-  width: 100%;
+  width: 53%;
   display: flex;
+  justify-content: space-between;
+  align-items: end;
   color: white;
+  // background-color: antiquewhite;
 
   & p {
     font-size: 2rem;
@@ -17,8 +20,9 @@
 
 .about {
   display: flex;
-  position: absolute;
   gap: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+
+  & li {
+    list-style: none;
+  }
 }

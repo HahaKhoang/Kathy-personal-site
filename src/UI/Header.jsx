@@ -1,17 +1,32 @@
+import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 function Header() {
   return (
-    <div className={styles.container}>
+    <nav className={styles.nav}>
       <div className={styles.kathy}>
         <p>Kathy</p>
       </div>
-      <div className={styles.about}>
-        <p>Work</p>
-        <p>About</p>
+      <div>
+        <ul className={styles.about}>
+          <li>Home</li>
+          <li>About</li>
+        </ul>
       </div>
-    </div>
+    </nav>
   );
 }
 
 export default Header;
+
+{
+  /* <div className={styles.container}>
+<div className={styles.kathy}>
+  <p>Kathy</p>
+</div>
+<div className={styles.about}>
+  <p>Work</p>
+  <p>About</p>
+</div>
+</div> */
+}
