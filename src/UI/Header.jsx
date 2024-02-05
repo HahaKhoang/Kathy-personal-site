@@ -19,7 +19,7 @@ function Header() {
             </li>
             <li>
               {" "}
-              <NavLink to="about" className={styles.link}>
+              <NavLink to="/about" className={styles.link}>
                 About
               </NavLink>
             </li>
