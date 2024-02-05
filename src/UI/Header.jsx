@@ -17,7 +17,12 @@ function Header() {
                 Home
               </NavLink>
             </li>
-            <li>About</li>
+            <li>
+              {" "}
+              <NavLink to="about" className={styles.link}>
+                About
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

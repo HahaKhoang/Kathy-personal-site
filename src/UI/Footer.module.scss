@@ -23,5 +23,16 @@
   & li {
     list-style: none;
     font-size: 1.2rem;
+
+    & a:link,
+    a:visited,
+    a:active {
+      color: white;
+      text-decoration: none;
+    }
+
+    & a:hover {
+      text-decoration: underline;
+    }
   }
 }
