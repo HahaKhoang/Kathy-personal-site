@@ -13,6 +13,7 @@ function Auroramalet() {
         role="Frontend Developer Intern"
         year="2023"
         images={images}
+        link="https://xn--auroramlet-75a.se/"
       />
     </div>
   );

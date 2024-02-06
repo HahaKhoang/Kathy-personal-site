@@ -5,6 +5,7 @@ import ClimateDeathWheel from "./pages/ClimateDeathWheel";
 import TabiTomodachi from "./pages/TabiTomodachi";
 import Auroramalet from "./pages/Auroramalet";
 import About from "./pages/About";
+import WildOasis from "./pages/WildOasis";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="climate-death-wheel" element={<ClimateDeathWheel />} />
         <Route path="tabi-tomodachi" element={<TabiTomodachi />} />
         <Route path="auroramalet" element={<Auroramalet />} />
+        <Route path="the-wild-oasis" element={<WildOasis />} />
       </Routes>
     </BrowserRouter>
   );
