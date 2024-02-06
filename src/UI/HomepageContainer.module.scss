@@ -19,6 +19,11 @@
 .center-container {
   text-align: center;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .project-container {
@@ -43,4 +48,13 @@
     cursor: pointer;
     filter: none;
   }
+}
+
+.title {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.desc {
+  font-size: 1.4rem;
 }
