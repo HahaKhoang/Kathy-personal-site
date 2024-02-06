@@ -1,6 +1,13 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import styles from "./ProjectPage.module.scss";
+import cdwIcon from "../../public/img/cdwIcon.jpg";
+import cha from "../../public/img/cha.jpg";
+import auroraIcon from "../../public/img/auroraIcon.jpg";
+import bi from "../../public/img/bi.jpg";
+import jk from "../../public/img/jk.jpg";
+import jungwon from "../../public/img/jungwon.jpg";
+import { NavLink } from "react-router-dom";
 
 function ProjectPage({ title, desc, role, year, images }) {
   return (
@@ -20,9 +27,24 @@ function ProjectPage({ title, desc, role, year, images }) {
           ))}
         </div>
         <div className={styles["right-container"]}>
-          {images.map((img) => (
-            <img src={img} key={Math.random()} />
-          ))}
+          <NavLink to="/climate-death-wheel">
+            <img src={cdwIcon} />
+          </NavLink>
+          <NavLink to="/tabi-tomodachi">
+            <img src={cha} />
+          </NavLink>
+          <NavLink to="/auroramalet">
+            <img src={auroraIcon} />
+          </NavLink>
+          <NavLink to="/the-wild-oasis">
+            <img src={bi} />
+          </NavLink>
+          <NavLink to="/climate-death-wheel">
+            <img src={cdwIcon} />
+          </NavLink>
+          <NavLink to="/climate-death-wheel">
+            <img src={cdwIcon} />
+          </NavLink>
         </div>
       </div>
       <Footer />
