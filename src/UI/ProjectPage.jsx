@@ -4,12 +4,19 @@ import cha from "../../public/img/cha.jpg";
 import auroraIcon from "../../public/img/auroraIcon.jpg";
 import bi from "../../public/img/bi.jpg";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function ProjectPage({ title, desc, role, year, images, link }) {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles["left-container"]}>
+        <motion.div
+          className={styles["left-container"]}
+          initial={{ opacity: 0, x: "-100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "-100%" }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <h1>{title}</h1>
           <p>{desc}</p>
           <p>Role: {role}</p>
@@ -19,13 +26,25 @@ function ProjectPage({ title, desc, role, year, images, link }) {
               See live &rarr;
             </a>
           )}
-        </div>
-        <div className={styles["middle-container"]}>
+        </motion.div>
+        <motion.div
+          className={styles["middle-container"]}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 1.3, ease: "easeOut" }}
+        >
           {images.map((img) => (
             <img src={img} key={Math.random()} />
           ))}
-        </div>
-        <div className={styles["right-container"]}>
+        </motion.div>
+        <motion.div
+          className={styles["right-container"]}
+          initial={{ opacity: 0, x: "100%" }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: "100%" }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <NavLink to="/climate-death-wheel">
             <img src={cdwIcon} />
           </NavLink>
@@ -44,7 +63,7 @@ function ProjectPage({ title, desc, role, year, images, link }) {
           <NavLink to="/climate-death-wheel">
             <img src={cdwIcon} />
           </NavLink>
-        </div>
+        </motion.div>
       </div>
     </>
   );

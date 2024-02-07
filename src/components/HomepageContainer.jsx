@@ -8,6 +8,7 @@ import jungwon from "../../public/img/jungwon.jpg";
 
 import { NavLink } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 function HomepageContainer() {
   const { ref: climateRef, inView: climateVisible } = useInView({
@@ -64,7 +65,13 @@ function HomepageContainer() {
 
   return (
     <div className={styles.container}>
-      <div className={styles["text-container"]}>
+      <motion.div
+        className={styles["text-container"]}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         <div className={styles["center-container"]}>
           <h1 className={styles.title}>
             {climateVisible && projects[0].title}
@@ -91,8 +98,14 @@ function HomepageContainer() {
             {oasisVisible && projects[3].desc3}
           </p>
         </div>
-      </div>
-      <div className={styles["project-container"]}>
+      </motion.div>
+      <motion.div
+        className={styles["project-container"]}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 2, ease: "easeOut" }}
+      >
         {projects.map((project) => (
           <NavLink to={project.link} key={project.title}>
             <img
@@ -102,7 +115,7 @@ function HomepageContainer() {
             />
           </NavLink>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

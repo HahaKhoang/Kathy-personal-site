@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 function AboutContainer() {
   return (
     <>
-      <Header />
       <div className={styles.container}>
         <div className={styles["page-1"]}>
           <h1 className={styles.intro}>US based developer</h1>
@@ -32,7 +31,21 @@ function AboutContainer() {
           </motion.div>
         </div>
         <div className={styles["page-3"]}>
-          <div className={styles["info-container"]}>
+          <motion.div
+            className={styles["info-container"]}
+            initial={{
+              opacity: 0,
+              x: "-100%",
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 2,
+              },
+            }}
+            viewport={{ once: true }}
+          >
             <p>
               Experienced global traveler with an expanded worldview, frequently
               challenged to live outside of her comfort zone.
@@ -42,10 +55,9 @@ function AboutContainer() {
               order to become a full-stack developer for the purpose of creating
               a more accessible online experience.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
