@@ -1,4 +1,4 @@
-import AboutContainer from "../UI/AboutContainer";
+import AboutContainer from "../components/AboutContainer";
 
 function About() {
   return (

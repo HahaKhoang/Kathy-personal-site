@@ -1,13 +1,16 @@
-import Footer from "../UI/Footer";
-import Header from "../UI/Header";
 import HomepageContainer from "../UI/HomepageContainer";
+import { motion } from "framer-motion";
 
 function Homepage() {
   return (
     <>
-      <Header />
-      <HomepageContainer />
-      <Footer />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <HomepageContainer />
+      </motion.div>
     </>
   );
 }

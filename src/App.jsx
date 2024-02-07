@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import styles from "./App.module.scss";
 import Homepage from "./pages/Homepage";
 import ClimateDeathWheel from "./pages/ClimateDeathWheel";
@@ -6,18 +6,16 @@ import TabiTomodachi from "./pages/TabiTomodachi";
 import Auroramalet from "./pages/Auroramalet";
 import About from "./pages/About";
 import WildOasis from "./pages/WildOasis";
+import AnimatedRoutes from "./components/AnimatedRoutes";
+import Header from "./UI/Header";
+import Footer from "./UI/Footer";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="about" element={<About />} />
-        <Route path="climate-death-wheel" element={<ClimateDeathWheel />} />
-        <Route path="tabi-tomodachi" element={<TabiTomodachi />} />
-        <Route path="auroramalet" element={<Auroramalet />} />
-        <Route path="the-wild-oasis" element={<WildOasis />} />
-      </Routes>
+      <Header />
+      <AnimatedRoutes />
+      <Footer />
     </BrowserRouter>
   );
 }

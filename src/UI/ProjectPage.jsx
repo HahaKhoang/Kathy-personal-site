@@ -1,5 +1,3 @@
-import Footer from "./Footer";
-import Header from "./Header";
 import styles from "./ProjectPage.module.scss";
 import cdwIcon from "../../public/img/cdwIcon.jpg";
 import cha from "../../public/img/cha.jpg";
@@ -10,7 +8,6 @@ import { NavLink } from "react-router-dom";
 function ProjectPage({ title, desc, role, year, images, link }) {
   return (
     <>
-      <Header />
       <div className={styles.container}>
         <div className={styles["left-container"]}>
           <h1>{title}</h1>
@@ -49,7 +46,6 @@ function ProjectPage({ title, desc, role, year, images, link }) {
           </NavLink>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

@@ -1,8 +1,8 @@
 import styles from "./AboutContainer.module.scss";
-import Footer from "./Footer";
-import Header from "./Header";
+import Footer from "../UI/Footer";
+import Header from "../UI/Header";
 import kathy1 from "../../public/img/kathy1.jpg";
-
+import { motion } from "framer-motion";
 function AboutContainer() {
   return (
     <>
@@ -13,9 +13,23 @@ function AboutContainer() {
           <p>( for now )</p>
         </div>
         <div className={styles["page-2"]}>
-          <div className={styles["picture-container"]}>
+          <motion.div
+            className={styles["picture-container"]}
+            initial={{
+              opacity: 0,
+              x: "100%",
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 2,
+              },
+            }}
+            viewport={{ once: true }}
+          >
             <img src={kathy1} />
-          </div>
+          </motion.div>
         </div>
         <div className={styles["page-3"]}>
           <div className={styles["info-container"]}>
