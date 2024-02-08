@@ -1,17 +1,16 @@
 import ProjectPage from "../UI/ProjectPage";
-import cdw1 from "../../public/img/cdw1.jpg";
-import cdw2 from "../../public/img/cdw2.jpg";
-import cdw3 from "../../public/img/cdw3.jpg";
-import cdw4 from "../../public/img/cdw4.jpg";
-import cdw5 from "../../public/img/cdw5.jpg";
+import tabi1 from "../../public/img/tabi1.jpg";
+import tabi2 from "../../public/img/tabi2.jpg";
+import tabi3 from "../../public/img/tabi3.jpg";
+import tabi4 from "../../public/img/tabi4.jpg";
 
 function TabiTomodachi() {
-  const images = [cdw1, cdw2, cdw3, cdw4, cdw5];
+  const images = [tabi1, tabi2, tabi3, tabi4];
   return (
     <div>
       <ProjectPage
         title="Tabi Tomodachi"
-        desc="Climate Death Wheel is an interactive web based project inspired by a climate strike sign I made for the Fridays for Future school strikes. It is undeniable that humans have had a significant impact on the climate. The visitor is encouraged to spin the wheel, and add the result of their death to the interactive map at the bottom of the page."
+        desc="Tabi Tomodachi is a travel consultancy website. Clients can seek help in planning their dream vacation. Packages include surprise trips, customized trips, and curated trips."
         role="Developer & Designer"
         year="2024"
         images={images}
