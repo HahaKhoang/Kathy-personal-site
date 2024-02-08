@@ -3,9 +3,6 @@ import cdwIcon from "../../public/img/cdwIcon.jpg";
 import cha from "../../public/img/cha.jpg";
 import auroraIcon from "../../public/img/auroraIcon.jpg";
 import bi from "../../public/img/bi.jpg";
-import jk from "../../public/img/jk.jpg";
-import jungwon from "../../public/img/jungwon.jpg";
-
 import { NavLink } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
