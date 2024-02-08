@@ -1,6 +1,6 @@
 import styles from "./ProjectPage.module.scss";
 import cdwIcon from "../../public/img/cdwIcon.jpg";
-import cha from "../../public/img/cha.jpg";
+import tabiIcon from "../../public/img/tabiIcon.jpg";
 import auroraIcon from "../../public/img/auroraIcon.jpg";
 import bi from "../../public/img/bi.jpg";
 import { NavLink } from "react-router-dom";
@@ -49,7 +49,7 @@ function ProjectPage({ title, desc, role, year, images, link }) {
             <img src={cdwIcon} />
           </NavLink>
           <NavLink to="/tabi-tomodachi">
-            <img src={cha} />
+            <img src={tabiIcon} />
           </NavLink>
           <NavLink to="/auroramalet">
             <img src={auroraIcon} />

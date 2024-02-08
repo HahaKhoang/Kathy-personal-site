@@ -1,6 +1,6 @@
 import styles from "./HomepageContainer.module.scss";
 import cdwIcon from "../../public/img/cdwIcon.jpg";
-import cha from "../../public/img/cha.jpg";
+import tabiIcon from "../../public/img/tabiIcon.jpg";
 import auroraIcon from "../../public/img/auroraIcon.jpg";
 import bi from "../../public/img/bi.jpg";
 import { NavLink } from "react-router-dom";
@@ -32,7 +32,7 @@ function HomepageContainer() {
       desc3: "Climate Climate Climate Climate Climate Climate Climate ",
     },
     {
-      src: cha,
+      src: tabiIcon,
       ref: tabiRef,
       link: "/tabi-tomodachi",
       title: "Tabi Tomodachi",
