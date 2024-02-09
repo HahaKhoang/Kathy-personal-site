@@ -5,6 +5,8 @@ import ClimateDeathWheel from "../pages/ClimateDeathWheel";
 import TabiTomodachi from "../pages/TabiTomodachi";
 import Auroramalet from "../pages/Auroramalet";
 import WildOasis from "../pages/WildOasis";
+import TodayILearned from "../pages/TodayILearned";
+import Natours from "../pages/Natours";
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedRoutes() {
@@ -26,6 +28,8 @@ function AnimatedRoutes() {
         <Route path="tabi-tomodachi" element={<TabiTomodachi />} />
         <Route path="auroramalet" element={<Auroramalet />} />
         <Route path="the-wild-oasis" element={<WildOasis />} />
+        <Route path="today-i-learned" element={<TodayILearned />} />
+        <Route path="natours" element={<Natours />} />
       </Routes>
     </AnimatePresence>
   );

@@ -1,9 +1,10 @@
 import ProjectPage from "../UI/ProjectPage";
 import aurora1 from "../../public/img/aurora1.jpg";
 import aurora2 from "../../public/img/aurora2.jpg";
+import aurora3 from "../../public/img/aurora3.jpg";
 
 function Auroramalet() {
-  const images = [aurora1, aurora2];
+  const images = [aurora1, aurora2, aurora3];
 
   return (
     <div>

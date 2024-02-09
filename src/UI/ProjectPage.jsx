@@ -1,8 +1,10 @@
 import styles from "./ProjectPage.module.scss";
-import cdwIcon from "../../public/img/cdwIcon.jpg";
-import tabiIcon from "../../public/img/tabiIcon.jpg";
-import auroraIcon from "../../public/img/auroraIcon.jpg";
-import bi from "../../public/img/bi.jpg";
+import cdwMini from "../../public/img/cdwMini.jpg";
+import tabiMini from "../../public/img/tabiMini.jpg";
+import auroraMini from "../../public/img/auroraMini.jpg";
+import woMini from "../../public/img/woMini.jpg";
+import tilMini from "../../public/img/tilMini.jpg";
+import natoursMini from "../../public/img/natoursMini.jpg";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -46,22 +48,22 @@ function ProjectPage({ title, desc, role, year, images, link }) {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <NavLink to="/climate-death-wheel">
-            <img src={cdwIcon} />
+            <img src={cdwMini} />
           </NavLink>
           <NavLink to="/tabi-tomodachi">
-            <img src={tabiIcon} />
+            <img src={tabiMini} />
           </NavLink>
           <NavLink to="/auroramalet">
-            <img src={auroraIcon} />
+            <img src={auroraMini} />
           </NavLink>
           <NavLink to="/the-wild-oasis">
-            <img src={bi} />
+            <img src={woMini} />
           </NavLink>
-          <NavLink to="/climate-death-wheel">
-            <img src={cdwIcon} />
+          <NavLink to="/today-i-learned">
+            <img src={tilMini} />
           </NavLink>
-          <NavLink to="/climate-death-wheel">
-            <img src={cdwIcon} />
+          <NavLink to="/natours">
+            <img src={natoursMini} />
           </NavLink>
         </motion.div>
       </div>
@@ -70,52 +72,3 @@ function ProjectPage({ title, desc, role, year, images, link }) {
 }
 
 export default ProjectPage;
-
-{
-  /* <>
-<div className={styles.container}>
-  <div className={styles["left-container"]}>
-    <h1>{title}</h1>
-    <p>{desc}</p>
-    <p>Role: {role}</p>
-    <p>Year: {year}</p>
-    <p>Live here</p>
-  </div>
-  <div className={styles["right-container"]}>
-    {images.map((img) => (
-      <img src={img} key={Math.random()} />
-    ))}
-  </div>
-</div>
-<div className={styles["middle-container"]}>
-  <div className={styles.middle}>
-    {images.map((img) => (
-      <img src={img} key={Math.random()} />
-    ))}
-  </div>
-</div>
-<div className={styles}></div>
-</> */
-}
-
-{
-  /* <div className={styles.container}>
-<div className={styles["left-container"]}>
-  <h1>{title}</h1>
-  <p>{desc}</p>
-  <p>Role: {role}</p>
-  <p>Year: {year}</p>
-  <p>Live here</p>
-</div>
-<div className={styles["middle-container"]}>
-  {images.map((img) => (
-    <img src={img} key={Math.random()} />
-  ))}
-</div>
-<div className={styles["right-container"]}>
-  {images.map((img) => (
-    <img src={img} key={Math.random()} />
-  ))}
-</div>
-</div> */
-}
