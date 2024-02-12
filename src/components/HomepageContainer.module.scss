@@ -14,6 +14,13 @@
   align-items: center;
   color: white;
   position: fixed;
+  z-index: 6000;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    height: 30%;
+    bottom: 7rem;
+  }
 }
 
 .center-container {
@@ -35,6 +42,15 @@
   gap: 1rem;
   margin-left: auto;
   z-index: 1000;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    height: 40%;
+    grid-template-columns: repeat(6, 90%);
+    grid-auto-rows: 100%;
+    gap: 3rem;
+    margin-top: 15rem;
+  }
 }
 
 .project {
