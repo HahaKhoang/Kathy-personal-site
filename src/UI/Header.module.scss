@@ -12,6 +12,10 @@
   @media (max-width: 1000px) {
     height: 15rem;
   }
+
+  @media (max-width: 500px) {
+    height: 10rem;
+  }
 }
 
 .nav {
@@ -31,6 +35,10 @@
   @media (max-width: 1000px) {
     width: 100%;
     padding: 5rem 2rem 0 2rem;
+  }
+
+  @media (max-width: 500px) {
+    padding: 2rem;
   }
 }
 
