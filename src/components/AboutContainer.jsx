@@ -1,6 +1,4 @@
 import styles from "./AboutContainer.module.scss";
-import Footer from "../UI/Footer";
-import Header from "../UI/Header";
 import kathy1 from "../../public/img/kathy1.jpg";
 import { motion } from "framer-motion";
 function AboutContainer() {
