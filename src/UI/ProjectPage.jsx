@@ -7,6 +7,7 @@ import tilMini from "../../public/img/tilMini.jpg";
 import natoursMini from "../../public/img/natoursMini.jpg";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import { RiArrowRightFill } from "@remixicon/react";
 
 function ProjectPage({ title, desc, role, year, images, link }) {
   return (
@@ -24,8 +25,16 @@ function ProjectPage({ title, desc, role, year, images, link }) {
           <p>Role: {role}</p>
           <p>Year: {year}</p>
           {link && (
-            <a href={link} target="_blank" rel="noreferrer">
-              See live &rarr;
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.link}
+            >
+              See live{" "}
+              <span>
+                <RiArrowRightFill />
+              </span>
             </a>
           )}
         </motion.div>
@@ -47,11 +56,11 @@ function ProjectPage({ title, desc, role, year, images, link }) {
           exit={{ opacity: 0, x: "100%" }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <NavLink to="/climate-death-wheel">
-            <img src={cdwMini} />
-          </NavLink>
           <NavLink to="/tabi-tomodachi">
             <img src={tabiMini} />
+          </NavLink>
+          <NavLink to="/climate-death-wheel">
+            <img src={cdwMini} />
           </NavLink>
           <NavLink to="/auroramalet">
             <img src={auroraMini} />

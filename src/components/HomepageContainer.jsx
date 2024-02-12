@@ -31,15 +31,6 @@ function HomepageContainer() {
 
   const projects = [
     {
-      src: cdwIcon,
-      ref: climateRef,
-      link: "/climate-death-wheel",
-      title: "Climate Death Wheel",
-      desc: "Interactive web component",
-      desc2: "Climate Climate Climate Climate ",
-      desc3: "Climate Climate Climate Climate Climate Climate Climate ",
-    },
-    {
       src: tabiIcon,
       ref: tabiRef,
       link: "/tabi-tomodachi",
@@ -47,6 +38,15 @@ function HomepageContainer() {
       desc: "Travel Agency Website ",
       desc2: "Travel Travel Travel Travel Travel Travel ",
       desc3: "Travel Travel Travel Travel Travel Travel Travel Travel Travel ",
+    },
+    {
+      src: cdwIcon,
+      ref: climateRef,
+      link: "/climate-death-wheel",
+      title: "Climate Death Wheel",
+      desc: "Interactive web component",
+      desc2: "Climate Climate Climate Climate ",
+      desc3: "Climate Climate Climate Climate Climate Climate Climate ",
     },
     {
       src: auroraIcon,
@@ -99,32 +99,32 @@ function HomepageContainer() {
       >
         <div className={styles["center-container"]}>
           <h1 className={styles.title}>
-            {climateVisible && projects[0].title}
-            {tabiVisible && projects[1].title}
+            {tabiVisible && projects[0].title}
+            {climateVisible && projects[1].title}
             {auroraVisible && projects[2].title}
             {oasisVisible && projects[3].title}
             {tilVisible && projects[4].title}
             {natoursVisible && projects[5].title}
           </h1>
           <p className={styles.desc}>
-            {climateVisible && projects[0].desc}
-            {tabiVisible && projects[1].desc}
+            {tabiVisible && projects[0].desc}
+            {climateVisible && projects[1].desc}
             {auroraVisible && projects[2].desc}
             {oasisVisible && projects[3].desc}
             {tilVisible && projects[4].desc}
             {natoursVisible && projects[5].desc}
           </p>
           <p className={styles.desc}>
-            {climateVisible && projects[0].desc2}
-            {tabiVisible && projects[1].desc2}
+            {tabiVisible && projects[0].desc2}
+            {climateVisible && projects[1].desc2}
             {auroraVisible && projects[2].desc2}
             {oasisVisible && projects[3].desc2}
             {tilVisible && projects[4].desc2}
             {natoursVisible && projects[5].desc2}
           </p>
           <p className={styles.desc}>
-            {climateVisible && projects[0].desc3}
-            {tabiVisible && projects[1].desc3}
+            {tabiVisible && projects[0].desc3}
+            {climateVisible && projects[1].desc3}
             {auroraVisible && projects[2].desc3}
             {oasisVisible && projects[3].desc3}
             {tilVisible && projects[4].desc3}
