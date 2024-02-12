@@ -5,11 +5,9 @@ function Header() {
   return (
     <nav className={styles["nav-container"]}>
       <div className={styles.nav}>
-        <div>
-          <NavLink to="/" className={styles.logo}>
-            Kathy Hoang
-          </NavLink>
-        </div>
+        <NavLink to="/" className={styles.logo}>
+          Kathy Hoang
+        </NavLink>
         <div>
           <ul className={styles.about}>
             <li>
@@ -18,7 +16,6 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              {" "}
               <NavLink to="/about" className={styles.link}>
                 About
               </NavLink>
@@ -31,15 +28,3 @@ function Header() {
 }
 
 export default Header;
-
-{
-  /* <div className={styles.container}>
-<div className={styles.kathy}>
-  <p>Kathy</p>
-</div>
-<div className={styles.about}>
-  <p>Work</p>
-  <p>About</p>
-</div>
-</div> */
-}

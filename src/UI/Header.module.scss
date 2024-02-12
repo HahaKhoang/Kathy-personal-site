@@ -27,6 +27,11 @@
   @media (max-width: 1200px) {
     padding: 5rem 0 0 2rem;
   }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 5rem 2rem 0 2rem;
+  }
 }
 
 .logo {
@@ -39,6 +44,7 @@
 .about {
   display: flex;
   gap: 2rem;
+  margin-bottom: 0.4rem;
 
   & li {
     list-style: none;
