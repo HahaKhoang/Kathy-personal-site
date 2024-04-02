@@ -8,6 +8,7 @@ import natoursIcon from "../../public/img/natoursIcon.jpg";
 import { NavLink } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import Slider from "react-slick";
 
 function HomepageContainer() {
   const { ref: climateRef, inView: climateVisible } = useInView({
@@ -35,9 +36,9 @@ function HomepageContainer() {
       ref: tabiRef,
       link: "/tabi-tomodachi",
       title: "Tabi Tomodachi",
-      desc: "Travel Agency Website ",
-      desc2: "Travel Travel Travel Travel Travel Travel ",
-      desc3: "Travel Travel Travel Travel Travel Travel Travel Travel Travel ",
+      desc: "Travel Consultancy Website",
+      desc2: "that creates curated trips ",
+      desc3: "for every type of traveler",
     },
     {
       src: cdwIcon,
@@ -45,8 +46,8 @@ function HomepageContainer() {
       link: "/climate-death-wheel",
       title: "Climate Death Wheel",
       desc: "Interactive web component",
-      desc2: "Climate Climate Climate Climate ",
-      desc3: "Climate Climate Climate Climate Climate Climate Climate ",
+      desc2: "that predicts the user's death",
+      desc3: "based upon impacts from climate change",
     },
     {
       src: auroraIcon,
@@ -54,8 +55,8 @@ function HomepageContainer() {
       link: "/auroramalet",
       title: "Auroramålet",
       desc: "Suing the Swedish State",
-      desc2: "Aurora Aurora Aurora Aurora Aurora ",
-      desc3: "Aurora Aurora Aurora Aurora Aurora Aurora Aurora Aurora ",
+      desc2: "What do we want ? Climate justice !",
+      desc3: "When do we want it ? Now !",
     },
     {
       src: woIcon,
@@ -63,18 +64,17 @@ function HomepageContainer() {
       link: "/the-wild-oasis",
       title: "The Wild Oasis",
       desc: "Hotel booking site",
-      desc2: "Oasis Oasis Oasis Oasis ",
-      desc3: "Oasis Oasis Oasis Oasis Oasis Oasis Oasis Oasis Oasis Oasis ",
+      desc2: "so users can choose their",
+      desc3: "most optimal accommodation",
     },
     {
       src: tilIcon,
       ref: tilRef,
       link: "/today-i-learned",
       title: "Today I learned",
-      desc: "Tour booking site",
-      desc2: "TIL TIL TIL TIL TIL TIL TIL",
-      desc3:
-        "TIL TIL TIL TIL TIL TIL TIL TIL TIL TIL TIL TIL TIL TIL TIL TIL TIL",
+      desc: "Trivia page",
+      desc2: "for users to learn",
+      desc3: "new random facts",
     },
     {
       src: natoursIcon,
@@ -82,9 +82,8 @@ function HomepageContainer() {
       link: "/natours",
       title: "Natours",
       desc: "Tour booking site",
-      desc2: "Natours Natours Natours Natours",
-      desc3:
-        "Natours Natours Natours Natours Natours Natours Natours Natours Natours",
+      desc2: "to encourage people",
+      desc3: "to go outdoors more",
     },
   ];
 
@@ -132,6 +131,7 @@ function HomepageContainer() {
           </p>
         </div>
       </motion.div>
+
       <motion.div
         className={styles["project-container"]}
         initial={{ opacity: 0 }}
@@ -154,3 +154,17 @@ function HomepageContainer() {
 }
 
 export default HomepageContainer;
+
+{
+  /* <Slider {...settings}>
+{projects.map((project) => (
+  <NavLink to={project.link} key={project.title}>
+    <img
+      src={project.src}
+      className={styles.project}
+      ref={project.ref}
+    />
+  </NavLink>
+))}
+</Slider> */
+}
