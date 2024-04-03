@@ -7,9 +7,9 @@ import Footer from "./UI/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <AnimatedRoutes />
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }

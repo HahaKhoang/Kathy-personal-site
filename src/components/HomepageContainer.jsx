@@ -13,9 +13,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
 
 function HomepageContainer() {
+  const { ref: climateRef, inView: climateVisible } = useInView({
+    threshold: 0.6,
+  });
+  const { ref: tabiRef, inView: tabiVisible } = useInView({
+    threshold: 0.6,
+  });
+  const { ref: auroraRef, inView: auroraVisible } = useInView({
+    threshold: 0.6,
+  });
+  const { ref: oasisRef, inView: oasisVisible } = useInView({
+    threshold: 0.6,
+  });
+  const { ref: tilRef, inView: tilVisible } = useInView({
+    threshold: 0.6,
+  });
+  const { ref: natoursRef, inView: natoursVisible } = useInView({
+    threshold: 0.6,
+  });
+
   const projects = [
     {
       src: tabiIcon,
+      ref: tabiRef,
       link: "/tabi-tomodachi",
       title: "Tabi Tomodachi",
       desc: "Travel Consultancy Website",
@@ -24,6 +44,7 @@ function HomepageContainer() {
     },
     {
       src: cdwIcon,
+      ref: climateRef,
       link: "/climate-death-wheel",
       title: "Climate Death Wheel",
       desc: "Interactive web component",
@@ -32,6 +53,7 @@ function HomepageContainer() {
     },
     {
       src: auroraIcon,
+      ref: auroraRef,
       link: "/auroramalet",
       title: "Auroramålet",
       desc: "Suing the Swedish State",
@@ -40,6 +62,7 @@ function HomepageContainer() {
     },
     {
       src: woIcon,
+      ref: oasisRef,
       link: "/the-wild-oasis",
       title: "The Wild Oasis",
       desc: "Hotel booking site",
@@ -48,6 +71,7 @@ function HomepageContainer() {
     },
     {
       src: tilIcon,
+      ref: tilRef,
       link: "/today-i-learned",
       title: "Today I learned",
       desc: "Trivia page",
@@ -56,6 +80,7 @@ function HomepageContainer() {
     },
     {
       src: natoursIcon,
+      ref: natoursRef,
       link: "/natours",
       title: "Natours",
       desc: "Tour booking site",
@@ -70,7 +95,89 @@ function HomepageContainer() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
+      className={styles.container}
     >
+      <NavLink to="/" className={styles.logo}>
+        Kathy Hoang
+      </NavLink>
+      <div className={styles["nav-bar-center"]}>
+        <ul className={styles.about}>
+          <li>
+            <NavLink to="/" className={styles.link}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={styles.link}>
+              About
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+      <div className={styles.footer}>
+        <ul className={styles.links}>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kathy-hoang-60908914a/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a
+              href="https://github.com/HahaKhoang"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          </li>
+          <li>
+            <a href="mailto:kathyhoang@gmail.com">Email</a>
+          </li>
+        </ul>
+      </div>
+      <div className={styles["text-container"]}>
+        <div className={styles["center-container"]}>
+          <h1 className={styles.title}>
+            {tabiVisible && projects[0].title}
+            {climateVisible && projects[1].title}
+            {auroraVisible && projects[2].title}
+            {oasisVisible && projects[3].title}
+            {tilVisible && projects[4].title}
+            {natoursVisible && projects[5].title}
+          </h1>
+          <div className={styles["desc-container"]}>
+            <p className={styles.desc}>
+              {tabiVisible && projects[0].desc}
+              {climateVisible && projects[1].desc}
+              {auroraVisible && projects[2].desc}
+              {oasisVisible && projects[3].desc}
+              {tilVisible && projects[4].desc}
+              {natoursVisible && projects[5].desc}
+            </p>
+            <p className={styles.desc}>
+              {tabiVisible && projects[0].desc2}
+              {climateVisible && projects[1].desc2}
+              {auroraVisible && projects[2].desc2}
+              {oasisVisible && projects[3].desc2}
+              {tilVisible && projects[4].desc2}
+              {natoursVisible && projects[5].desc2}
+            </p>
+            <p className={styles.desc}>
+              {tabiVisible && projects[0].desc3}
+              {climateVisible && projects[1].desc3}
+              {auroraVisible && projects[2].desc3}
+              {oasisVisible && projects[3].desc3}
+              {tilVisible && projects[4].desc3}
+              {natoursVisible && projects[5].desc3}
+            </p>
+          </div>
+        </div>
+      </div>
       <Swiper
         direction={"vertical"}
         slidesPerView="auto"
@@ -88,17 +195,14 @@ function HomepageContainer() {
         {projects.map((project) => {
           return (
             <SwiperSlide className={styles["swiper-slide"]} key={project.title}>
-              <div className={styles["text-container"]}>
-                <div className={styles["center-container"]}>
-                  <h1 className={styles.title}>{project.title}</h1>
-                  <p className={styles.desc}>{project.desc}</p>
-                  <p className={styles.desc}>{project.desc2}</p>
-                  <p className={styles.desc}>{project.desc3}</p>
-                </div>
-              </div>
+              <div className={styles["empty-container"]}></div>
               <div className={styles["project-container"]}>
                 <NavLink to={project.link}>
-                  <img src={project.src} className={styles.picture} />
+                  <img
+                    src={project.src}
+                    className={styles.picture}
+                    ref={project.ref}
+                  />
                 </NavLink>
               </div>
             </SwiperSlide>
@@ -277,4 +381,47 @@ export default HomepageContainer;
   <img src={tabiIcon} className={styles.picture} />
 </div>
 </SwiperSlide> */
+}
+
+///////// SWIPER FULL PAGE COMPLETE
+
+{
+  /* <Swiper
+direction={"vertical"}
+slidesPerView="auto"
+spaceBetween={30}
+mousewheel={{ releaseOnEdges: true }}
+freeMode={true}
+loop={true}
+speed={1000}
+pagination={{
+  clickable: true,
+}}
+modules={[Mousewheel, Pagination]}
+className={styles["swiper-container"]}
+>
+{projects.map((project) => {
+  return (
+    <SwiperSlide className={styles["swiper-slide"]} key={project.title}>
+      <div className={styles["text-container"]}>
+        <div className={styles["center-container"]}>
+          <h1 className={styles.title}>{project.title}</h1>
+          <p className={styles.desc}>{project.desc}</p>
+          <p className={styles.desc}>{project.desc2}</p>
+          <p className={styles.desc}>{project.desc3}</p>
+        </div>
+      </div>
+      <div className={styles["project-container"]}>
+        <NavLink to={project.link}>
+          <img
+            src={project.src}
+            className={styles.picture}
+            ref={project.ref}
+          />
+        </NavLink>
+      </div>
+    </SwiperSlide>
+  );
+})}
+</Swiper> */
 }

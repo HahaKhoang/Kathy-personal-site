@@ -1,9 +1,10 @@
 .nav-container {
   position: fixed;
-  background-color: black;
+  background-color: navajowhite;
   width: 100%;
   height: 25rem;
   z-index: 500;
+  top: 0;
 
   @media (max-width: 1200px) {
     height: 20rem;
@@ -20,7 +21,7 @@
 
 .nav {
   width: 54%;
-  background-color: black;
+  background-color: lavenderblush;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -65,3 +66,72 @@
   color: white;
   text-decoration: none;
 }
+
+//////////////// ORIGINAL //////
+// .nav-container {
+//   position: fixed;
+//   background-color: navajowhite;
+//   width: 100%;
+//   height: 25rem;
+//   z-index: 500;
+
+//   @media (max-width: 1200px) {
+//     height: 20rem;
+//   }
+
+//   @media (max-width: 1000px) {
+//     height: 15rem;
+//   }
+
+//   @media (max-width: 500px) {
+//     height: 10rem;
+//   }
+// }
+
+// .nav {
+//   width: 54%;
+//   background-color: lavenderblush;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: end;
+//   padding: 5rem 0 0 5rem;
+//   font-family: "Oswald", sans-serif;
+//   color: white;
+
+//   @media (max-width: 1200px) {
+//     padding: 5rem 0 0 2rem;
+//   }
+
+//   @media (max-width: 1000px) {
+//     width: 100%;
+//     padding: 5rem 2rem 0 2rem;
+//   }
+
+//   @media (max-width: 500px) {
+//     padding: 2rem;
+//   }
+// }
+
+// .logo {
+//   text-transform: uppercase;
+//   font-size: 3rem;
+//   color: white;
+//   text-decoration: none;
+// }
+
+// .about {
+//   display: flex;
+//   gap: 2rem;
+//   margin-bottom: 0.4rem;
+
+//   & li {
+//     list-style: none;
+//     font-size: 1.6rem;
+//     text-transform: uppercase;
+//   }
+// }
+
+// .link {
+//   color: white;
+//   text-decoration: none;
+// }
