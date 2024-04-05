@@ -102,12 +102,12 @@ function HomepageContainer() {
       </NavLink>
       <div className={styles["nav-bar-center"]}>
         <ul className={styles.about}>
-          <li>
+          <li className={styles["list-item"]}>
             <NavLink to="/" className={styles.link}>
               Home
             </NavLink>
           </li>
-          <li>
+          <li className={styles["list-item"]}>
             <NavLink to="/about" className={styles.link}>
               About
             </NavLink>
@@ -116,7 +116,7 @@ function HomepageContainer() {
       </div>
       <div className={styles.footer}>
         <ul className={styles.links}>
-          <li>
+          <li className={styles["list-item"]}>
             <a
               href="https://www.linkedin.com/in/kathy-hoang-60908914a/"
               target="_blank"
@@ -125,8 +125,7 @@ function HomepageContainer() {
               LinkedIn
             </a>
           </li>
-          <li>
-            {" "}
+          <li className={styles["list-item"]}>
             <a
               href="https://github.com/HahaKhoang"
               target="_blank"
@@ -135,8 +134,8 @@ function HomepageContainer() {
               Github
             </a>
           </li>
-          <li>
-            <a href="mailto:kathyhoang@gmail.com">Email</a>
+          <li className={styles["list-item"]}>
+            <a href="mailto:kathyhahoang@gmail.com">Email</a>
           </li>
         </ul>
       </div>
