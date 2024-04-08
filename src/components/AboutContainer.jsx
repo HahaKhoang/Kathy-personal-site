@@ -1,10 +1,14 @@
 import styles from "./AboutContainer.module.scss";
 import kathy1 from "../../public/img/kathy1.jpg";
 import { motion } from "framer-motion";
+import Header from "../UI/Header";
+import Footer from "../UI/Footer";
+
 function AboutContainer() {
   return (
     <>
       <div className={styles.container}>
+        <Header />
         <div className={styles["page-1"]}>
           <h1 className={styles.intro}>US based developer</h1>
           <p>( for now )</p>
@@ -55,6 +59,7 @@ function AboutContainer() {
             </p>
           </motion.div>
         </div>
+        <Footer />
       </div>
     </>
   );

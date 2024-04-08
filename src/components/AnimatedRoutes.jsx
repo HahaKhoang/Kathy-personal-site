@@ -8,6 +8,7 @@ import WildOasis from "../pages/WildOasis";
 import TodayILearned from "../pages/TodayILearned";
 import Natours from "../pages/Natours";
 import { AnimatePresence } from "framer-motion";
+import AppLayout from "../AppLayout";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -23,13 +24,15 @@ function AnimatedRoutes() {
     >
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Homepage />} />
-        <Route path="about" element={<About />} />
-        <Route path="climate-death-wheel" element={<ClimateDeathWheel />} />
-        <Route path="tabi-tomodachi" element={<TabiTomodachi />} />
-        <Route path="auroramalet" element={<Auroramalet />} />
-        <Route path="the-wild-oasis" element={<WildOasis />} />
-        <Route path="today-i-learned" element={<TodayILearned />} />
-        <Route path="natours" element={<Natours />} />
+        <Route element={<AppLayout />}>
+          <Route path="about" element={<About />} />
+          <Route path="climate-death-wheel" element={<ClimateDeathWheel />} />
+          <Route path="tabi-tomodachi" element={<TabiTomodachi />} />
+          <Route path="auroramalet" element={<Auroramalet />} />
+          <Route path="the-wild-oasis" element={<WildOasis />} />
+          <Route path="today-i-learned" element={<TodayILearned />} />
+          <Route path="natours" element={<Natours />} />
+        </Route>
       </Routes>
     </AnimatePresence>
   );

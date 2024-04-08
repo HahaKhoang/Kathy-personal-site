@@ -1,7 +1,19 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
+import { useEffect, useRef } from "react";
 
 function Header() {
+  // const cursor = useRef();
+
+  // useEffect(() => {
+  //   window.addEventListener("mousemove", (e) => {
+  //     const x = e.clientX;
+  //     const y = e.clientY;
+
+  //     cursor.current.style.left = x + "px";
+  //     cursor.current.style.top = y + "px";
+  //   });
+  // }, []);
   return (
     <nav className={styles["nav-container"]}>
       <div className={styles.nav}>
@@ -22,6 +34,7 @@ function Header() {
             </li>
           </ul>
         </div>
+        {/* <div ref={cursor} className={styles.cursor}></div> */}
       </div>
     </nav>
   );

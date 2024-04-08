@@ -16,6 +16,7 @@ html {
   font-size: 62.5%;
   font-family: "Open Sans", sans-serif;
   background-color: black;
+  cursor: none;
 }
 
 html::-webkit-scrollbar {
@@ -32,4 +33,20 @@ h4 {
 h1 {
   font-size: 3rem;
   font-weight: 400;
+}
+
+.cursor {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1000;
+  mix-blend-mode: difference;
+}
+
+li {
+  list-style: none;
 }

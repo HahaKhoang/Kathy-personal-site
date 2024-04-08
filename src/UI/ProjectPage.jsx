@@ -15,7 +15,7 @@ function ProjectPage({ title, desc, role, year, images, link }) {
   return (
     <>
       <div className={styles.container}>
-        <Header />
+        {/* <Header /> */}
         <motion.div
           className={styles["left-container"]}
           initial={{ opacity: 0, x: "-100%" }}
@@ -78,7 +78,7 @@ function ProjectPage({ title, desc, role, year, images, link }) {
             <img src={natoursMini} />
           </NavLink>
         </motion.div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
