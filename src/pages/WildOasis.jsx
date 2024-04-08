@@ -10,8 +10,8 @@ function WildOasis() {
     <div>
       <ProjectPage
         title="The Wild Oasis"
-        desc="The Wild Oasis is a booking page for a hotel."
-        role="Frontend"
+        desc="The Wild Oasis is a booking page for a hotel. The user must first log in to view the dashboard for this fictional hotel. React Query was used for fetching data from Supabase."
+        role="Developer"
         year="2023"
         images={images}
       />

@@ -10,11 +10,11 @@ function TodayILearned() {
     <div>
       <ProjectPage
         title="Today I learned"
-        desc="Auroramålet is a youth-led group that is suing the Swedish government in public court because they do not treat the climate crisis as a crisis. Aurora states that for us children and young people, the rights to life, health and development guaranteed to us by the European Convention are endangered by the climate crisis. We in Aurora hold the state responsible for their lack of climate action. Through a court process, we are ensuring that the state respects human rights. "
-        role="Frontend Developer Intern"
+        desc="Today I learned is a project where users can learn and share facts. It is a simple full stack project using Supabase as the database."
+        role="Developer"
         year="2023"
         images={images}
-        link="https://xn--auroramlet-75a.se/"
+        link="https://today-i-learned-kathy.netlify.app/"
       />
     </div>
   );
