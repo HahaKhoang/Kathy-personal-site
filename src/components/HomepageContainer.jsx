@@ -127,7 +127,7 @@ function HomepageContainer() {
           </li>
           <li className={styles["list-item"]}>
             <a
-              href="https://github.com/HahaKhoang"
+              href="https://github.com/kathyhahahahoang"
               target="_blank"
               rel="noreferrer"
             >

@@ -5,7 +5,7 @@ function Footer() {
     <div className={styles.container}>
       <div className={styles.footer}>
         <ul className={styles.links}>
-          <li>
+          <li className={styles["list-item"]}>
             <a
               href="https://www.linkedin.com/in/kathy-hoang-60908914a/"
               target="_blank"
@@ -14,18 +14,17 @@ function Footer() {
               LinkedIn
             </a>
           </li>
-          <li>
-            {" "}
+          <li className={styles["list-item"]}>
             <a
-              href="https://github.com/HahaKhoang"
+              href="https://github.com/kathyhahahahoang"
               target="_blank"
               rel="noreferrer"
             >
               Github
             </a>
           </li>
-          <li>
-            <a href="mailto:kathyhoang@gmail.com">Email</a>
+          <li className={styles["list-item"]}>
+            <a href="mailto:kathyhahoang@gmail.com">Email</a>
           </li>
         </ul>
       </div>

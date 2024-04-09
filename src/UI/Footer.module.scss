@@ -31,9 +31,27 @@
       color: white;
       text-decoration: none;
     }
-
-    // & a:hover {
-    //   text-decoration: underline;
-    // }
   }
+}
+
+.list-item {
+  list-style: none;
+  font-size: 1.2rem;
+  transition: 0.4s;
+
+  & a {
+    cursor: none;
+  }
+
+  & a:link,
+  a:visited,
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.list-item:hover {
+  transform: translateY(-20%);
+  transition: 0.4s;
 }
