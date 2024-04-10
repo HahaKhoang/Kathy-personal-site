@@ -97,6 +97,83 @@ function HomepageContainer() {
       transition={{ duration: 1, ease: "easeOut" }}
       className={styles.container}
     >
+      <div className={styles["text-container"]}>
+        <div className={styles["center-container"]}>
+          <h1 className={styles.title}>
+            {tabiVisible && projects[0].title}
+            {climateVisible && projects[1].title}
+            {auroraVisible && projects[2].title}
+            {oasisVisible && projects[3].title}
+            {tilVisible && projects[4].title}
+            {natoursVisible && projects[5].title}
+          </h1>
+          <div className={styles["desc-container"]}>
+            <p className={styles.desc}>
+              {tabiVisible && projects[0].desc}
+              {climateVisible && projects[1].desc}
+              {auroraVisible && projects[2].desc}
+              {oasisVisible && projects[3].desc}
+              {tilVisible && projects[4].desc}
+              {natoursVisible && projects[5].desc}
+            </p>
+            <p className={styles.desc}>
+              {tabiVisible && projects[0].desc2}
+              {climateVisible && projects[1].desc2}
+              {auroraVisible && projects[2].desc2}
+              {oasisVisible && projects[3].desc2}
+              {tilVisible && projects[4].desc2}
+              {natoursVisible && projects[5].desc2}
+            </p>
+            <p className={styles.desc}>
+              {tabiVisible && projects[0].desc3}
+              {climateVisible && projects[1].desc3}
+              {auroraVisible && projects[2].desc3}
+              {oasisVisible && projects[3].desc3}
+              {tilVisible && projects[4].desc3}
+              {natoursVisible && projects[5].desc3}
+            </p>
+          </div>
+        </div>
+      </div>
+      <Swiper
+        direction={"horizontal"}
+        slidesPerView="auto"
+        spaceBetween={30}
+        mousewheel={{ releaseOnEdges: true }}
+        freeMode={true}
+        loop={true}
+        speed={1000}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        modules={[Mousewheel, Pagination]}
+        className={styles["swiper-container"]}
+        breakpoints={{
+          // 3000: {
+          //   direction: "vertical",
+          // },
+          1000: {
+            direction: "vertical",
+          },
+        }}
+      >
+        {projects.map((project) => {
+          return (
+            <SwiperSlide className={styles["swiper-slide"]} key={project.title}>
+              <div className={styles["empty-container"]}></div>
+              <div className={styles["project-container"]}>
+                <NavLink to={project.link}>
+                  <img
+                    src={project.src}
+                    className={styles.picture}
+                    ref={project.ref}
+                  />
+                </NavLink>
+              </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
       <NavLink to="/" className={styles.logo}>
         Kathy Hoang
       </NavLink>
@@ -139,75 +216,6 @@ function HomepageContainer() {
           </li>
         </ul>
       </div>
-      <div className={styles["text-container"]}>
-        <div className={styles["center-container"]}>
-          <h1 className={styles.title}>
-            {tabiVisible && projects[0].title}
-            {climateVisible && projects[1].title}
-            {auroraVisible && projects[2].title}
-            {oasisVisible && projects[3].title}
-            {tilVisible && projects[4].title}
-            {natoursVisible && projects[5].title}
-          </h1>
-          <div className={styles["desc-container"]}>
-            <p className={styles.desc}>
-              {tabiVisible && projects[0].desc}
-              {climateVisible && projects[1].desc}
-              {auroraVisible && projects[2].desc}
-              {oasisVisible && projects[3].desc}
-              {tilVisible && projects[4].desc}
-              {natoursVisible && projects[5].desc}
-            </p>
-            <p className={styles.desc}>
-              {tabiVisible && projects[0].desc2}
-              {climateVisible && projects[1].desc2}
-              {auroraVisible && projects[2].desc2}
-              {oasisVisible && projects[3].desc2}
-              {tilVisible && projects[4].desc2}
-              {natoursVisible && projects[5].desc2}
-            </p>
-            <p className={styles.desc}>
-              {tabiVisible && projects[0].desc3}
-              {climateVisible && projects[1].desc3}
-              {auroraVisible && projects[2].desc3}
-              {oasisVisible && projects[3].desc3}
-              {tilVisible && projects[4].desc3}
-              {natoursVisible && projects[5].desc3}
-            </p>
-          </div>
-        </div>
-      </div>
-      <Swiper
-        direction={"vertical"}
-        slidesPerView="auto"
-        spaceBetween={30}
-        mousewheel={{ releaseOnEdges: true }}
-        freeMode={true}
-        loop={true}
-        speed={1000}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        modules={[Mousewheel, Pagination]}
-        className={styles["swiper-container"]}
-      >
-        {projects.map((project) => {
-          return (
-            <SwiperSlide className={styles["swiper-slide"]} key={project.title}>
-              <div className={styles["empty-container"]}></div>
-              <div className={styles["project-container"]}>
-                <NavLink to={project.link}>
-                  <img
-                    src={project.src}
-                    className={styles.picture}
-                    ref={project.ref}
-                  />
-                </NavLink>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
     </motion.div>
   );
 }
