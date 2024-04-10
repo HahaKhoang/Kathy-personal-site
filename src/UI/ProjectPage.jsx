@@ -8,14 +8,11 @@ import natoursMini from "../../public/img/natoursMini.jpg";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { RiArrowRightFill } from "@remixicon/react";
-import Header from "../ui/Header";
-import Footer from "../ui/Footer";
 
 function ProjectPage({ title, desc, role, year, images, link }) {
   return (
     <>
       <div className={styles.container}>
-        {/* <Header /> */}
         <motion.div
           className={styles["left-container"]}
           initial={{ opacity: 0, x: "-100%" }}
@@ -78,7 +75,6 @@ function ProjectPage({ title, desc, role, year, images, link }) {
             <img src={natoursMini} />
           </NavLink>
         </motion.div>
-        {/* <Footer /> */}
       </div>
     </>
   );
