@@ -1,10 +1,10 @@
 import ProjectPage from "../UI/ProjectPage";
-import natours1 from "../../public/img/natours1.jpg";
-import natours2 from "../../public/img/natours2.jpg";
-import natours3 from "../../public/img/natours3.jpg";
-import natours4 from "../../public/img/natours4.jpg";
-import natours5 from "../../public/img/natours5.jpg";
-import natours6 from "../../public/img/natours6.jpg";
+import natours1 from "../assets/images/natours1.webp";
+import natours2 from "../assets/images/natours2.webp";
+import natours3 from "../assets/images/natours3.webp";
+import natours4 from "../assets/images/natours4.webp";
+import natours5 from "../assets/images/natours5.webp";
+import natours6 from "../assets/images/natours6.webp";
 
 function Natours() {
   const images = [natours1, natours2, natours3, natours4, natours5, natours6];

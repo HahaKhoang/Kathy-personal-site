@@ -1,5 +1,5 @@
 import styles from "./AboutContainer.module.scss";
-import kathy1 from "../../public/img/kathy1.jpg";
+import kathy from "../assets/images/kathy1.webp";
 import { motion } from "framer-motion";
 import Header from "../UI/Header";
 import Footer from "../UI/Footer";
@@ -29,7 +29,7 @@ function AboutContainer() {
             }}
             viewport={{ once: true }}
           >
-            <img src={kathy1} />
+            <img src={kathy} />
           </motion.div>
         </div>
         <div className={styles["page-3"]}>

@@ -1,7 +1,7 @@
 import ProjectPage from "../UI/ProjectPage";
-import aurora1 from "../../public/img/aurora1.jpg";
-import aurora2 from "../../public/img/aurora2.jpg";
-import aurora3 from "../../public/img/aurora3.jpg";
+import aurora1 from "../assets/images/aurora1.webp";
+import aurora2 from "../assets/images/aurora2.webp";
+import aurora3 from "../assets/images/aurora3.webp";
 
 function Auroramalet() {
   const images = [aurora1, aurora2, aurora3];

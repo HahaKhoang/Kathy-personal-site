@@ -1,14 +1,13 @@
 import styles from "./HomepageContainer.module.scss";
-import cdwIcon from "../../public/img/cdwIcon.jpg";
-import tabiIcon from "../../public/img/tabiIcon.jpg";
-import auroraIcon from "../../public/img/auroraIcon.jpg";
-import woIcon from "../../public/img/woIcon.jpg";
-import tilIcon from "../../public/img/tilIcon.jpg";
-import natoursIcon from "../../public/img/natoursIcon.jpg";
+import cdwIcon from "../assets/images/cdwIcon.webp";
+import tabiIcon from "../assets/images/tabiIcon.webp";
+import auroraIcon from "../assets/images/auroraIcon.webp";
+import woIcon from "../assets/images/woIcon.webp";
+import tilIcon from "../assets/images/tilIcon.webp";
+import natoursIcon from "../assets/images/natoursIcon.webp";
 import { NavLink } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
 
@@ -162,6 +161,7 @@ function HomepageContainer() {
                     className={styles.picture}
                     ref={project.ref}
                     alt={`${project.title} website's starting page`}
+                    loading="lazy"
                   />
                 </NavLink>
               </div>

@@ -1,7 +1,7 @@
 import ProjectPage from "../UI/ProjectPage";
-import til1 from "../../public/img/til1.jpg";
-import til2 from "../../public/img/til2.jpg";
-import til3 from "../../public/img/til3.jpg";
+import til1 from "../assets/images/til1.webp";
+import til2 from "../assets/images/til2.webp";
+import til3 from "../assets/images/til3.webp";
 
 function TodayILearned() {
   const images = [til1, til2, til3];

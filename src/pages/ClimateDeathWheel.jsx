@@ -1,9 +1,9 @@
 import ProjectPage from "../UI/ProjectPage";
-import cdw1 from "../../public/img/cdw1.jpg";
-import cdw2 from "../../public/img/cdw2.jpg";
-import cdw3 from "../../public/img/cdw3.jpg";
-import cdw4 from "../../public/img/cdw4.jpg";
-import cdw5 from "../../public/img/cdw5.jpg";
+import cdw1 from "../assets/images/cdw1.webp";
+import cdw2 from "../assets/images/cdw2.webp";
+import cdw3 from "../assets/images/cdw3.webp";
+import cdw4 from "../assets/images/cdw4.webp";
+import cdw5 from "../assets/images/cdw5.webp";
 
 function ClimateDeathWheel() {
   const images = [cdw1, cdw2, cdw3, cdw4, cdw5];

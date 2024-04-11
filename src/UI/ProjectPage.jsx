@@ -1,10 +1,10 @@
 import styles from "./ProjectPage.module.scss";
-import cdwMini from "../../public/img/cdwMini.jpg";
-import tabiMini from "../../public/img/tabiMini.jpg";
-import auroraMini from "../../public/img/auroraMini.jpg";
-import woMini from "../../public/img/woMini.jpg";
-import tilMini from "../../public/img/tilMini.jpg";
-import natoursMini from "../../public/img/natoursMini.jpg";
+import cdwMini from "../assets/images/cdwMini.webp";
+import tabiMini from "../assets/images/tabiMini.webp";
+import auroraMini from "../assets/images/auroraMini.webp";
+import woMini from "../assets/images/woMini.webp";
+import tilMini from "../assets/images/tilMini.webp";
+import natoursMini from "../assets/images/natoursMini.webp";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { RiArrowRightFill } from "@remixicon/react";
