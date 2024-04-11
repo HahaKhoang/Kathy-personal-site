@@ -31,7 +31,7 @@ function ProjectPage({ title, desc, role, year, images, link }) {
               rel="noreferrer"
               className={styles.link}
             >
-              See live{" "}
+              See live
               <span>
                 <RiArrowRightFill />
               </span>
@@ -56,22 +56,22 @@ function ProjectPage({ title, desc, role, year, images, link }) {
           exit={{ opacity: 0, x: "100%" }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <NavLink to="/tabi-tomodachi">
-            <img src={tabiMini} />
+          <NavLink to="/tabi-tomodachi" className={styles.icon}>
+            <img src={tabiMini} alt={`Screenshots of ${title}'s website `} />
           </NavLink>
-          <NavLink to="/climate-death-wheel">
+          <NavLink to="/climate-death-wheel" className={styles.icon}>
             <img src={cdwMini} />
           </NavLink>
-          <NavLink to="/auroramalet">
+          <NavLink to="/auroramalet" className={styles.icon}>
             <img src={auroraMini} />
           </NavLink>
-          <NavLink to="/the-wild-oasis">
+          <NavLink to="/the-wild-oasis" className={styles.icon}>
             <img src={woMini} />
           </NavLink>
-          <NavLink to="/today-i-learned">
+          <NavLink to="/today-i-learned" className={styles.icon}>
             <img src={tilMini} />
           </NavLink>
-          <NavLink to="/natours">
+          <NavLink to="/natours" className={styles.icon}>
             <img src={natoursMini} />
           </NavLink>
         </motion.div>

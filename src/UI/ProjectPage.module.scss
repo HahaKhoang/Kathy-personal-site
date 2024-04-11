@@ -14,7 +14,6 @@
     height: 100%;
     padding: 2rem;
     padding-top: 15rem;
-    // background-color: aquamarine;
     display: flex;
     flex-direction: column;
     gap: 10rem;
@@ -26,7 +25,6 @@
 }
 
 .left-container {
-  // background-color: navajowhite;
   width: 20%;
   position: fixed;
   left: 5rem;
@@ -67,7 +65,7 @@
   }
 
   & a:hover {
-    text-decoration: underline;
+    color: yellow;
   }
 }
 
@@ -142,5 +140,15 @@
 
 .link {
   display: flex;
+  align-self: flex-start;
   gap: 1rem;
+  cursor: none;
+}
+
+.link:focus {
+  border-bottom: 3px solid yellow;
+}
+
+.icon:focus {
+  border: 3px solid yellow;
 }
