@@ -14,44 +14,33 @@
   bottom: 3rem;
   color: white;
   z-index: 500;
-}
-
-.links {
   display: flex;
   gap: 2rem;
   text-transform: uppercase;
-
-  & li {
-    list-style: none;
-    font-size: 1.2rem;
-
-    & a:link,
-    a:visited,
-    a:active {
-      color: white;
-      text-decoration: none;
-    }
-  }
 }
 
 .list-item {
   list-style: none;
   font-size: 1.2rem;
   transition: 0.4s;
-
-  & a {
-    cursor: none;
-  }
-
-  & a:link,
-  a:visited,
-  a:active {
-    color: white;
-    text-decoration: none;
-  }
 }
 
 .list-item:hover {
-  transform: translateY(-20%);
+  transform: translateY(-30%);
   transition: 0.4s;
+  color: yellow;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  cursor: none;
+}
+
+.link:hover {
+  color: yellow;
+}
+
+.link:focus {
+  border-bottom: 3px solid yellow;
 }
