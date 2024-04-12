@@ -35,7 +35,7 @@ function TabiTomodachi() {
         role="Developer & Designer"
         year="2024"
         images={images}
-        link="https://tabi-tomodachi.netlify.app/"
+        link="https://tabi-tomodachi.com/"
       />
     </div>
   );

@@ -51,10 +51,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  @media (max-width: 1000px) {
-    width: 80%;
-  }
+  width: 80%;
 }
 
 .desc-container {
@@ -96,6 +93,7 @@
 
 .title {
   font-size: 5rem;
+  line-height: 5.4rem;
   margin-bottom: 2rem;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
